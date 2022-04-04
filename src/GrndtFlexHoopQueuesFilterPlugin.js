@@ -81,17 +81,20 @@ export default class GrndtFlexHoopQueuesFilterPlugin extends FlexPlugin {
       timeZone: theData.timezone,
       weekday: 'short',
       hour: 'numeric',
-      hour12: false
+      hour12: false,
+      month: 'short',
+      day: 'numeric'
     };
     const formatter = new Intl.DateTimeFormat('en-US', formatOptions);
   
-    // Get the current time and day of the week for your specific time zone
+    // Get the current time, day of the week, and month/day for agent's time zone
     const formattedDate = formatter.format(new Date()).split(', ');
   
-    const hour = formattedDate[1];
+    const hour = formattedDate[2];
     const day = formattedDate[0];
+    const monthDay = formattedDate[1];
   
-    const invalidKeys = ['timezone'];
+    const invalidKeys = ['timezone', 'holidays'];
   
     // Convert to query syntax
     let newFilters = [];
@@ -100,7 +103,10 @@ export default class GrndtFlexHoopQueuesFilterPlugin extends FlexPlugin {
 
     for( const [key, value] of Object.entries(theData)) {
       // This means value is object listing days and open/close
-      if(!(invalidKeys.includes(key)) && value[day].open <= hour && value[day].close > hour) {
+      if(!(invalidKeys.includes(key)) 
+          && value[day].open <= hour 
+          && value[day].close > hour
+          && !(value.holidays.includes(monthDay))) {
         subAry.push('"' + key + '"');
       }
       if(subAry.length == 29) {
