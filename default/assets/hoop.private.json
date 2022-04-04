@@ -3,9 +3,9 @@
   "global":{
     "global":{
       "holidays":[
-        "Dec25",
-        "Apr15",
-        "Jan1"
+        "Dec 25",
+        "Apr 15",
+        "Jan 1"
       ],
       "Mon":{
         "open":7,
@@ -38,9 +38,9 @@
     },
     "dispute":{
       "holidays":[
-        "Dec25",
-        "Apr15",
-        "Jan1"
+        "Dec 25",
+        "Apr 15",
+        "Jan 1"
       ],
       "Mon":{
         "open":6,
@@ -73,9 +73,9 @@
     },
     "fraud block":{
       "holidays":[
-        "Dec25",
-        "Apr15",
-        "Jan1"
+        "Dec 25",
+        "Apr 15",
+        "Jan 1"
       ],
       "Mon":{
         "open":6,
@@ -108,9 +108,9 @@
     },
     "lost stolen":{
       "holidays":[
-        "Dec25",
-        "Apr15",
-        "Jan1"
+        "Dec 25",
+        "Apr 15",
+        "Jan 1"
       ],
       "Mon":{
         "open":6,
@@ -143,9 +143,9 @@
     },
     "support":{
       "holidays":[
-        "Dec25",
-        "Apr15",
-        "Jan1"
+        "Dec 25",
+        "Apr 15",
+        "Jan 1"
       ],
       "Mon":{
         "open":6,
@@ -180,9 +180,9 @@
   "baas gbr":{
     "dispute":{
       "holidays":[
-        "Dec25",
-        "Apr15",
-        "Jan1"
+        "Dec 25",
+        "Apr 15",
+        "Jan 1"
       ],
       "Mon":{
         "open":11,
@@ -215,9 +215,9 @@
     },
     "lm":{
       "holidays":[
-        "Dec25",
-        "Apr15",
-        "Jan1"
+        "Dec 25",
+        "Apr 15",
+        "Jan 1"
       ],
       "Mon":{
         "open":11,
@@ -250,9 +250,9 @@
     },
     "lost stolen":{
       "holidays":[
-        "Dec25",
-        "Apr15",
-        "Jan1"
+        "Dec 25",
+        "Apr 15",
+        "Jan 1"
       ],
       "Mon":{
         "open":11,
@@ -285,9 +285,9 @@
     },
     "support":{
       "holidays":[
-        "Dec25",
-        "Apr15",
-        "Jan1"
+        "Dec 25",
+        "Apr 15",
+        "Jan 1"
       ],
       "Mon":{
         "open":11,
@@ -322,9 +322,9 @@
   "baas intuit":{
     "transfer qb":{
       "holidays":[
-        "Dec25",
-        "Apr15",
-        "Jan1"
+        "Dec 25",
+        "Apr 15",
+        "Jan 1"
       ],
       "Mon":{
         "open":11,
@@ -357,9 +357,9 @@
     },
     "transfer tc":{
       "holidays":[
-        "Dec25",
-        "Apr15",
-        "Jan1"
+        "Dec 25",
+        "Apr 15",
+        "Jan 1"
       ],
       "Mon":{
         "open":11,
@@ -392,9 +392,9 @@
     },
     "dispute":{
       "holidays":[
-        "Dec25",
-        "Apr15",
-        "Jan1"
+        "Dec 25",
+        "Apr 15",
+        "Jan 1"
       ],
       "Mon":{
         "open":11,
@@ -427,9 +427,9 @@
     },
     "lost stolen":{
       "holidays":[
-        "Dec25",
-        "Apr15",
-        "Jan1"
+        "Dec 25",
+        "Apr 15",
+        "Jan 1"
       ],
       "Mon":{
         "open":11,
@@ -462,11 +462,11 @@
     },
     "support":{
       "holidays":[
-        "Apr4",
-        "Apr5",
-        "Dec25",
-        "Apr15",
-        "Jan1"
+        "Apr 4",
+        "Apr 5",
+        "Dec 25",
+        "Apr 15",
+        "Jan 1"
       ],
       "Mon":{
         "open":11,
