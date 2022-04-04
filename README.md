@@ -45,7 +45,7 @@ twilio plugins:install @twilio-labs/plugin-serverless
 
 Run `twilio flex:plugins --help` or and `twilio serverless --help` to see all the commands we currently support. For further details on Flex Plugins refer to our documentation on the [Twilio CLI Plugins Docs](https://www.twilio.com/docs/twilio-cli/plugins) page.
 
-Open the hoops.js file in the `default/assets` directory.  Edit, following the structure requirements...
+Open the hoops.js file in the `default/assets` directory.  Edit JSON, following the data structure shown in the sample file.  Global information is accomodated, so not every Queue must be defined in this file.  Note that the timezone used to define the hours must be provided at the top of the file, as this is used to convert open and close times to the agent's local timezone.
 
 
 In the `default` directory, deploy the Serverless Function and Assets.
