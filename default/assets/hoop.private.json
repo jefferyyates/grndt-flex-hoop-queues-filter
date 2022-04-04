@@ -2,6 +2,7 @@
   "timezone":"America/Los_Angeles",
   "global":{
     "global":{
+      "holidays":['Dec25', 'Apr15', 'Jan1'],
       "Mon":{
         "open":7,
         "close":11
@@ -32,6 +33,7 @@
       }
     },
     "dispute":{
+      "holidays":['Dec25', 'Apr15', 'Jan1'],
       "Mon":{
         "open":6,
         "close":11
@@ -62,6 +64,7 @@
       }
     },
     "fraud block":{
+      "holidays":['Dec25', 'Apr15', 'Jan1'],
       "Mon":{
         "open":6,
         "close":11
@@ -92,6 +95,7 @@
       }
     },
     "lost stolen":{
+      "holidays":['Dec25', 'Apr15', 'Jan1'],
       "Mon":{
         "open":6,
         "close":11
@@ -122,6 +126,7 @@
       }
     },
     "support":{
+      "holidays":['Dec25', 'Apr15', 'Jan1'],
       "Mon":{
         "open":6,
         "close":11
@@ -154,6 +159,7 @@
   },
   "baas gbr":{
     "dispute":{
+      "holidays":['Dec25', 'Apr15', 'Jan1'],
       "Mon":{
         "open":11,
         "close":19
@@ -184,6 +190,7 @@
       }
     },
     "lm":{
+      "holidays":['Dec25', 'Apr15', 'Jan1'],
       "Mon":{
         "open":11,
         "close":19
@@ -214,6 +221,7 @@
       }
     },
     "lost stolen":{
+      "holidays":['Dec25', 'Apr15', 'Jan1'],
       "Mon":{
         "open":11,
         "close":19
@@ -244,6 +252,7 @@
       }
     },
     "support":{
+      "holidays":['Dec25', 'Apr15', 'Jan1'],
       "Mon":{
         "open":11,
         "close":19
@@ -276,6 +285,7 @@
   },
   "baas intuit":{
     "transfer qb":{
+      "holidays":['Dec25', 'Apr15', 'Jan1'],
       "Mon":{
         "open":11,
         "close":19
@@ -306,6 +316,7 @@
       }
     },
     "transfer tc":{
+      "holidays":['Dec25', 'Apr15', 'Jan1'],
       "Mon":{
         "open":11,
         "close":19
@@ -336,6 +347,7 @@
       }
     },
     "dispute":{
+      "holidays":['Dec25', 'Apr15', 'Jan1'],
       "Mon":{
         "open":11,
         "close":19
@@ -366,6 +378,7 @@
       }
     },
     "lost stolen":{
+      "holidays":['Dec25', 'Apr15', 'Jan1'],
       "Mon":{
         "open":11,
         "close":19
@@ -396,6 +409,7 @@
       }
     },
     "support":{
+      "holidays":['Apr4', 'Apr5', 'Dec25', 'Apr15', 'Jan1'],
       "Mon":{
         "open":11,
         "close":19
