@@ -68,11 +68,9 @@ twilio flex:plugins:deploy --changelog "add your comment"
 
 Note the instructions in the command output - the next command to run is supplied.  Copy and paste it, and run it to activate this release of the Plugin.
 
-There are comments in the source code for src/FlexLocalizationPlugin.js describing how to determine which Language Asset file to load.  Review those, and the rest of the code, and configure Flex Users with their language settings.
+There are comments in all of the source code describing how the hoops.js file is read, parsed, and converted to a filter for the Queues in the Transfer Call panel.
 
 Close all browsers with Flex running, and open a new browser window to start Flex.
-
-For further reference see [Flex Localization and Templating](https://www.twilio.com/docs/flex/developer/ui/localization-and-templating)
 
 If necessary, run `npm install twilo-flex-token-validator` for dependencies in both base project directory and the `default` directory!
 
