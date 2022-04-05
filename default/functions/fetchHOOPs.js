@@ -10,7 +10,7 @@ exports.handler = TokenValidator(function(context, event, callback) {
 
   // Use FileSystem library to read the json.
   const fs = require('fs');
-  const file = Runtime.getAssets()['/hoop.js'].path;
+  const file = Runtime.getAssets()['/hoop.json'].path;
   const text = fs.readFileSync(file).toString('utf-8');
 
 
@@ -22,8 +22,7 @@ exports.handler = TokenValidator(function(context, event, callback) {
 
   // Pull all queues
   const client = context.getTwilioClient();
-
-  client.taskrouter.workspaces('WS27bd2e2fe7313d203f6d3aca2b5ff670')
+  client.taskrouter.workspaces(context.WORKSPACE_SID)
     .taskQueues
     .list()
     .then(taskQueues => {
@@ -67,7 +66,7 @@ const findFor = (rawQueueName = String, theHoops = {}) => {
   for(const[rawKey, value] of Object.entries(theHoops.global)) {
     let key = rawKey.toLowerCase();
     
-    // Want to match a subKey like "lost stolen"
+    // Want to match a key like "lost stolen"
     // to anything inside queueName like "baas gbr lost stolen t1 en"
     if(queueName.indexOf(key) != -1) {
       return value;

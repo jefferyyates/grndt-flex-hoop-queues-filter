@@ -6,9 +6,9 @@
 
 Twilio Flex Plugins allow you to customize the appearance and behavior of [Twilio Flex](https://www.twilio.com/flex). If you want to learn more about the capabilities and how to use the APIs, check out our [Flex documentation](https://www.twilio.com/docs/flex).
 
-This plugin 
+This plugin and its associated Serverless Functions and Assets creates a filter for the list of Queues displayed when transferring a phone call.  It collates all of the defined Queues against a private Asset named hoops.json, and builds a Flex filter list from that.
 
-The included assets contains a sample hoops.js file, defining when each "queue" is open or closed.  This file MUST be edited to reflect actual business operating hours.
+The included assets contains a sample hoops.js file, defining when each Queue is open or closed.  This file MUST be edited to reflect actual business operating hours and holidays.
 
 ## Setup
 
@@ -47,11 +47,16 @@ Run `twilio flex:plugins --help` or and `twilio serverless --help` to see all th
 
 Open the hoops.js file in the `default/assets` directory.  Edit JSON, following the data structure shown in the sample file.  Global information is accomodated, so not every Queue must be defined in this file.  Note that the timezone used to define the hours must be provided at the top of the file, as this is used to convert open and close times to the agent's local timezone.
 
+Open (or create if it doesn't exist) the .env file in the `default` directory.  Remove all lines from the file, and add this line:
+
+WORKSPACE_SID=<yourworkspacesid>
+
+Your Workspace SID can be found in the Twilio Console, and starts with the "WS".
 
 In the `default` directory, deploy the Serverless Function and Assets.
 
 ```bash
-twilio serverless:deploy --override-existing-project
+twilio serverless:deploy --override-existing-project --env=./.env
 ```
 Note the Domain displayed in the command output. Copy this value.
 
